@@ -1,0 +1,21 @@
+<div class="flex justify-center">
+  <div class="max-w-lg rounded overflow-hidden sm:shadow-lg bg-white mb-8">
+    <div class="px-8 py-8">
+      <a href="{{ include.post.url }}" class="font-bold text-teal-darkest no-underline text-2xl mb-2">{{ include.post.title }}</a>
+      <p class="text-grey-darker text-base mt-2">
+      {{ include.post.content }}
+      </p>
+    </div>
+
+    <div class="flex">
+      {% for category in include.post.categories %}
+        <div class="flex-1 border-t-2 border-red text-grey-darker text-center px-8 py-2 m-2">
+          #{{ category }}
+        </div>
+      {% endfor %}
+      <div class="flex-1 border-t-2 border-blue text-grey-darker text-center px-8 py-2 m-2">
+        Check something
+      </div>
+    </div>
+  </div>
+</div>
