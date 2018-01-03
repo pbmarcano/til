@@ -7,13 +7,16 @@
       </p>
     </div>
 
-    <div class="flex">
+    <div class="flex font-bold uppercase">
       {% for category in include.post.categories %}
-        <div class="flex-1 border-t-2 border-red text-grey-darker text-center px-8 py-2 m-2">
-          #{{ category }}
-        </div>
+        <a href="/{{ category }}" class="flex-1 text-red no-underline">
+          <div class="border-t-2 border-red text-center px-8 py-2 m-2">
+            #{{ category }}
+          </div>
+        </a>
       {% endfor %}
-      <div class="flex-1 border-t-2 border-blue text-grey-darker text-center px-8 py-2 m-2">
+
+      <div class="flex-1 border-t-2 border-blue text-center px-8 py-2 m-2">
         Check something
       </div>
     </div>
