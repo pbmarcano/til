@@ -8,6 +8,8 @@ twitter_username: pbmarcano
 github_username:  pbmarcano
 color: teal
 
+permalink: /:categories/:title
+
 # Build settings
 markdown: kramdown
 plugins:
