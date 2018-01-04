@@ -4,22 +4,20 @@
       <a href="{{ include.post.url }}" class="font-bold text-teal-darkest no-underline text-2xl mb-2">
         {{ include.post.title }}
       </a>
-      <p class="text-grey-darker text-base mt-2">
+      <div class="text-grey-darkest text-base mt-2">
         {{ include.post.content }}
-      </p>
+      </div>
     </div>
 
     <div class="flex font-bold uppercase">
       {% for category in include.post.categories %}
-        <a href="/{{ category }}" class="flex-1 text-red no-underline">
-          <div class="border-t-2 border-red text-center px-8 py-2 m-2">
-            #{{ category }}
-          </div>
-        </a>
+        <div class="flex-1 text-red-light no-underline border-t-2 border-red text-center px-8 py-2 m-1 hover:bg-red-lightest">
+          #{{ category }}
+        </div>
       {% endfor %}
 
-      <div class="flex-1 border-t-2 border-blue text-center px-8 py-2 m-2">
-        Check something
+      <div class="flex-1 text-blue-light border-t-2 border-blue text-center px-8 py-2 m-1 hover:bg-blue-lightest">
+        Coming soon
       </div>
     </div>
   </div>
