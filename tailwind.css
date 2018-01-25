@@ -1,0 +1,7 @@
+@tailwind preflight;
+
+p {
+  @apply .py-2;
+}
+
+@tailwind utilities;
