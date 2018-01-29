@@ -16,9 +16,9 @@
         </div>
       {% endfor %}
 
-      <div class="flex-1 text-blue-light border-t-2 border-blue text-center px-8 py-2 m-1 hover:bg-blue-lightest">
-        Coming soon
-      </div>
+      <a href="https://github.com/pbmarcano/til/issues/new/?title={{ include.post.title | prepend: "Post comment/question -- " | url_encode }}&body={{ "Feel free to ask me anything about this post, or educate me if you have a better way :)" | url_encode }}" target="_blank" class="flex-1 text-blue-light no-underline border-t-2 border-blue text-center px-8 py-2 m-1 hover:bg-blue-lightest">
+        Discuss
+      </a>
     </div>
   </div>
 </div>
