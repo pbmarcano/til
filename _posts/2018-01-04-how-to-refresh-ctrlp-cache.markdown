@@ -9,6 +9,6 @@ I really enjoy using [`ctrlp.vim`](https://github.com/ctrlpvim/ctrlp.vim) for fu
 
 By default, `ctrlp` caches your directories upon first use for faster finding later on. That typically works great until you add or delete files, and your cache is no longer valid.
 
-Fortunately, you can quickly purge your cache in ctrlp by clicking `F5` once ctrlp is open.
+Fortunately, you can quickly purge your cache in ctrlp by clicking <kbd>F5</kbd> once ctrlp is open.
 
 I must have missed this line in the documentation. 
