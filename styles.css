@@ -1,5 +1,6 @@
 @tailwind preflight;
 
 p { @apply .py-2; }
+kbd { @apply .bg-grey-light .text-xs .py-1 .px-2 .border .border-grey .shadow-inner-light .rounded-sm; }
 
 @tailwind utilities;

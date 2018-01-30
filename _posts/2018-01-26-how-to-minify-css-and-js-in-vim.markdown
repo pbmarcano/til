@@ -23,11 +23,11 @@ npm install -g minify
 ``` shell
 vim style.css
 ```
-3. Now that you are in vim, create a new line at the top of the file using <kbd>Shift</kbd>+<kbd>O</kbd>
+3. Now that you are in vim, create a new line at the top of the file using <kbd>Shift</kbd> + <kbd>O</kbd>
 4. Read in the existing file, parse it through minify and paste it in place.
 ``` vim
 :r !minify %
 ```
-5. Move down a line to the uncompressed css and delete the rest of the file using <kbd>d</kbd>+<kbd>G</kbd>
+5. Move down a line to the uncompressed css and delete the rest of the file using <kbd>d</kbd> + <kbd>G</kbd>
 
 If you are looking to minify lots of files for an app there are clearly better options, but if you just want to shrink the size of a single file on a static site this is my new favorite.

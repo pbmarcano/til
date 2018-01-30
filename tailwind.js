@@ -270,7 +270,7 @@ module.exports = {
   | Here is where you define your font weights. We've provided a list of
   | common font weight names with their respective numeric scale values
   | to get you started. It's unlikely that your project will require
-  | all of these, so we recommend removing those you don't need.
+   all of these, so we recommend removing those you don't need.
   |
   | Class name: .font-{weight}
   |
@@ -708,6 +708,7 @@ module.exports = {
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    'inner-light': '0 1px 0 rgba(0,0,0,0.06),0 0 0 2px #FFF inset',
     'none': 'none',
   },
 
