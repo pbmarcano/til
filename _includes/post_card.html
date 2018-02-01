@@ -4,6 +4,9 @@
       <a href="{{ include.post.url }}" class="font-bold text-teal-darkest no-underline text-2xl mb-2">
         {{ include.post.title }}
       </a>
+      <div class="text-grey leading-normal text-base">
+        {{ include.post.date | date: "%B %-d, %Y" | prepend: "Posted on " }}
+      </div>
       <div class="text-grey-darkest leading-normal text-base mt-2">
         {{ include.post.content }}
       </div>
