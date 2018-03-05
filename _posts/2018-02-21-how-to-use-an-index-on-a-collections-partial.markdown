@@ -5,7 +5,7 @@ date: "2018-02-21 14:20:14 -0500"
 categories: rails
 ---
 
-When iterating through a collection in a rails view, typically use a block to do so right in my view. 
+When iterating through a collection in a rails view, I typically use a block to do so right in my view. 
 
 If I need different id's in the DOM for each element, it's quickly achievable with the `with_index` method which provides the index of each item as it iterates.
 
