@@ -1,6 +1,36 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   {% include post_card.html post=post %}
 {% endfor %}
+
+<div class="flex justify-center pb-8">
+  <div class="flex-auto max-w-lg">
+
+    <div class="flex text-center">
+
+      <div class="flex-1">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}"
+             class="bg-white text-{{ site.color }}-dark p-2 rounded shadow-md no-underline uppercase font-bold">
+            &larr; Previous
+          </a>
+        {% else %}
+          <span class="bg-white text-grey p-2 rounded shadow-md no-underline uppercase font-bold">Previous</span>
+        {% endif %}
+      </div>
+
+      <span class="flex-1 text-grey-dark">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+      <div class="flex-1">
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}"
+             class="bg-white text-{{ site.color }}-dark p-2 rounded shadow-md no-underline uppercase font-bold">Next &rarr;</a>
+        {% else %}
+          <span class="bg-white text-grey p-2 rounded shadow-md no-underline uppercase font-bold">Next</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,10 @@
 <div class="flex justify-center">
-  <div class="flex-auto max-w-lg rounded overflow-hidden sm:shadow-lg bg-white mb-8">
+  <div class="flex-auto max-w-lg rounded overflow-hidden sm:shadow-md bg-white mb-4 sm:mb-8">
     <div class="px-8 py-8">
       <a href="{{ include.post.url }}" class="font-bold text-teal-darkest no-underline text-2xl mb-2">
         {{ include.post.title }}
       </a>
-      <div class="text-grey leading-normal text-base">
+      <div class="text-grey-dark leading-normal text-base">
         {{ include.post.date | date: "%B %-d, %Y" | prepend: "Posted on " }}
       </div>
       <div class="text-grey-darkest leading-normal text-base mt-2">
@@ -19,7 +19,14 @@
         </div>
       {% endfor %}
 
-      <a href="https://github.com/pbmarcano/til/issues/new/?title={{ include.post.title | prepend: "Post comment/question -- " | url_encode }}&body={{ "Feel free to ask me anything about this post, or educate me if you have a better way :)" | url_encode }}" target="_blank" class="flex-1 text-blue-light no-underline border-t-2 border-blue text-center px-8 py-2 m-1 hover:bg-blue-lightest">
+      <a href="{{ include.post.url }}" 
+         class="flex-1 text-green-light no-underline border-t-2 border-green text-center px-8 py-2 m-1 hover:bg-green-lightest">
+        Permalink
+      </a>
+
+      <a href="https://github.com/pbmarcano/til/issues/new/?title={{ include.post.title | prepend: "Post comment/question -- " | url_encode }}&body={{ "Feel free to ask me anything about this post, or educate me if you have a better way :)" | url_encode }}" 
+         target="_blank" 
+         class="flex-1 text-blue-light no-underline border-t-2 border-blue text-center px-8 py-2 m-1 hover:bg-blue-lightest">
         Discuss
       </a>
     </div>
